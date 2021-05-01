@@ -122,18 +122,18 @@ console.log(`Hola ${nomb}`);
 
 //true y false
 
-let verdadero = true;
-let falso = false;
+//let verdadero = true;
+//let falso = false;
 
-let mayor = 4 > 1; //True
+//let mayor = 4 > 1; //True
 
 //Tipo de dato null
 
 //Valor especial que no pertence  ningun tipo de dato anterior.
 //Forma un tipo propio separado que contiene solo el valor null.
 
-let edad = null;
-console.log(edad);
+//let edad = null;
+//console.log(edad);
 
 //En JS null NO significa un objeto no existente
 //Es solo un valor especial que representa nada, vacio.
@@ -142,20 +142,113 @@ console.log(edad);
 //Valor especial que no pertence a ningun tipo de dato anterior.
 //El significado de undefined es valor no asignado.
 
-let edad_dos;
-console.log(edad_dos);
+//let edad_dos;
+//console.log(edad_dos);
 
 //El operador typeof o funcion typeof(x), devuelve el tipo de dato.
 
-console.log(typeof undefined); //undefined
-console.log(typeof 0); //number
-console.log(typeof true); //boolean
-console.log(typeof 10n); //bigint
-console.log(typeof "Hola"); //string
+//console.log(typeof undefined); //undefined
+//console.log(typeof 0); //number
+//console.log(typeof true); //boolean
+//console.log(typeof 10n); //bigint
+//console.log(typeof "Hola"); //string
 
 console.log(typeof(alert)); //function
 console.log(typeof(null)); //object == ERROR DE JAVASCRIPT
 console.log(typeof(Math)); //object
+
+
+//Interacciones: altert, prompt, confirm
+
+//alert (tambien se le conoce como ventana modal, es una ventana modal porque bloquea hasta hasta que le demos aceptar)
+
+//alert("Hola Mundo");
+
+//prompt
+
+//et nombre_capturado = prompt('Digite el nombre', 'Hola');
+//alert(nombre_capturado);
+
+
+//prompt('Digite el nombre');
+//prompt('Digite el nombre', ''); //Solo para internet explorer
+
+//Confirm
+
+//let esHelado = confirm('¿Te gusta el helado?');
+//console.log(esHelado); //true si presionan OK y false si presionan cancelar
+
+//Coversion de tipos
+
+//Existen dos tipos de conversiones explicita e implicita
+
+//Convertir a String
+
+let valor = true;
+console.log(typeof valor);
+
+valor = String(valor); //true
+valor = String(false); //false
+valor = String(null); //null
+console.log(undefined); //undefined
+valor = String(valor); 
+console.log(typeof valor);
+
+//Convertir a numero
+
+//Conversiones numericas ocurren automaticamnet en funciones matematicas y expresiones
+
+//alert('6' / '2');
+
+let cadena = "123";
+let num_cad = Number(cadena);
+console.log(Number('hola')); //NaN
+
+/*
+undefined -> NaN
+null -> 0
+true -> 1
+false -> 0
+string '' -> 0
+string 'hola' -> NaN
+*/
+
+//Convertir a Booleano
+
+console.log(Boolean("Hola"))
+
+/*
+undefined -> false
+null -> false
+string '' -> false
+NaN -> false
+0 -> false
+'0' -> true 
+'  ' -> true
+*/
+
+console.log(Boolean(String(0)))
+console.log(Boolean(0))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
