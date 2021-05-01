@@ -1,4 +1,4 @@
-alert('Hola Mundo');
+//alert('Hola Mundo');
 
 //Comentarios
 
@@ -24,9 +24,9 @@ alert('Hola Mundo');
  //Variables
 
 
- let mensaje;
+/*let mensaje;
  mensaje = "Hola Mundo";
- alert(mensaje)
+ alert(mensaje)*/
 
  let a = 5;
  let b = 6;
@@ -68,6 +68,140 @@ pi_dos = pi;
 pi_dos = 7;
 console.log(pi);
 console.log(pi_dos);
+
+//const id_account = get_id_account(45);
+
+//Tipos de datos
+
+//Dinamicamente tipado
+
+let mensaje_tres = "Hola";
+mensaje_tres = 12234
+
+//Tipo de dat Number
+let n = 123;
+n = 12.456;
+
+//Valores numericos especiales Infinity, -Infinity y NaN
+
+//Infinity: representa el infinito matematico. Es un valor especial que es mayor que cualquier numero.
+
+console.log(1 / 0);
+console.log(Infinity)
+
+//NaN representa un error de calculo. Es el resultado de una operacion
+//matematica incorrecta o indefinida.
+
+console.log("No es un numero" / 2);
+
+//NaN es pegajoso. Cualquier operacion sobre NaN devuelve NaN
+
+console.log("No es un numero" / 2 + 5);
+
+//Tipo de dato BigInt
+
+//Valores enteros mayores que (2^53-1) o menor que -(2^53) 9.007.199.254.740.991
+
+let numero_grande = 12345678990123445677890123456789999999999999999;
+console.log(numero_grande);
+
+//Tipo string
+let texto = "hola";
+let texto_dos = 'hola';
+let texto_tres = ``; //backticks funcionalidad extendidad
+let nomb = "Roberto";
+console.log("Hola", nomb);
+console.log('Hola', nomb);
+console.log(`Hola`, nomb);
+
+console.log("Hola ${nomb}");
+console.log('Hola ${nomb}');
+console.log(`Hola ${nomb}`);
+
+//Tipo Booleano
+
+//true y false
+
+let verdadero = true;
+let falso = false;
+
+let mayor = 4 > 1; //True
+
+//Tipo de dato null
+
+//Valor especial que no pertence  ningun tipo de dato anterior.
+//Forma un tipo propio separado que contiene solo el valor null.
+
+let edad = null;
+console.log(edad);
+
+//En JS null NO significa un objeto no existente
+//Es solo un valor especial que representa nada, vacio.
+
+//Valor Undefined
+//Valor especial que no pertence a ningun tipo de dato anterior.
+//El significado de undefined es valor no asignado.
+
+let edad_dos;
+console.log(edad_dos);
+
+//El operador typeof o funcion typeof(x), devuelve el tipo de dato.
+
+console.log(typeof undefined); //undefined
+console.log(typeof 0); //number
+console.log(typeof true); //boolean
+console.log(typeof 10n); //bigint
+console.log(typeof "Hola"); //string
+
+console.log(typeof(alert)); //function
+console.log(typeof(null)); //object == ERROR DE JAVASCRIPT
+console.log(typeof(Math)); //object
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
