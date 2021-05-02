@@ -552,6 +552,163 @@ a = null ?? undefined ?? undefined ?? null ?? 'hola' ?? null ?? 'carlos'; //'hol
 
 a = null ?? undefined ?? undefined ?? undefined ?? null ?? null ?? null; //null
 
+//Bucles while y for
+
+/* While(condicion){
+
+}
+*/
+
+let i = 1;
+while(i <= 10){
+console.log(`El valor de i es: ${i}`);
+i++;
+}
+
+console.log('****************');
+i = 10;
+while(i){
+    console.log(`El valor de i es: ${i}`);
+    i--;
+}
+
+//Do - while
+
+/*
+
+*/
+
+console.log('****************');
+
+i = 1;
+
+do{
+    console.log(`El valor de i es: ${i}`);
+    i++;
+}while(i <= 10);
+
+
+//Ciclo for
+
+/**
+ for(comienzo: condicion; incremento)
+ */
+
+ console.log('****************');
+ for(i=0; i >= 0;  i--){
+     console.log(`El valor de i es: ${i}`);
+ }
+
+ //Alncance de la variable
+
+ console.log('****************');
+ for(let z=0; z <= 10;  z++){
+    console.log(`El valor de z es: ${z}`);
+}
+
+
+//console.log(`El valor de z por fuera es: ${z}`);
+
+let w = 0;
+console.log('****************');
+ for(w=0; w <= 10;  w++){
+    console.log(`El valor de w es: ${w}`);
+}
+
+
+console.log(`El valor de w por fuera es: ${w}`);
+
+//Saltado de partes
+//w = 0;
+//console.log('****************');
+ //for(; w <= 10;){
+   // console.log(`El valor de w es: ${w}`);
+//}
+
+//Break y continue
+
+//console.log('****************');
+
+//w = 0;
+//while(1){
+    //console.log(`El valor de w por fuera es: ${w}`);
+    //w+=1;
+    //if(w == 11) break;
+//}
+
+for(i = 1; i <= 10; i++){
+    if(i%2 != 0) continue;
+    console.log(`${i} es un numero par.`);
+}
+
+//Etiqueta para break y continue
+
+console.log('***** Etiquetas *****');
+principal: for(i = 0; i <= 10; i++){
+    for(j = 0; j<= 10; j++){
+
+        console.log(`La suma de i+j es ${i+j}`);
+        if(j == 2) break principal;
+    }
+}
+
+console.log('salio');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
